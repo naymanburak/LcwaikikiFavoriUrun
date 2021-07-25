@@ -10,6 +10,12 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 
+/**
+ * @author  Mustafa Burak Nayman
+ * @version 1.0
+ * @since   2021-07-25
+*/
+
 public class BasePage extends BaseTest {
 
     WebDriverWait driverWait = new WebDriverWait(driver, 60);
