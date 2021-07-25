@@ -1,0 +1,73 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+{"logLevel":"debug","message":"gauge-java took 644milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 644"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 54019"}
+{"logLevel":"info","message":"Listening on port:54019"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.gomlekSayfaKontrol' and 'Base.StepImplementation.gomlekSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Erkek Gömlek sayfası acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.tumunuSecKontrol' and 'Base.StepImplementation.tumunuSecKontrol'"}
+{"logLevel":"debug","message":"Found Tümünün secildigi kontrol et. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.secilenSil' and 'Base.StepImplementation.secilenSil'"}
+{"logLevel":"debug","message":"Found Secilenleri sil butonuna tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.anaSayfaKontrol' and 'Base.StepImplementation.anaSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Ana sayfanin acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.siralaSec' and 'Base.StepImplementation.siralaSec'"}
+{"logLevel":"debug","message":"Found Sırala Menusunden 'En yüksek fiyattan' secenegi secilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favorilerimSayfaKontrol' and 'Base.StepImplementation.favorilerimSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Favorilerim sayfasinin acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.siralaKontrol' and 'Base.StepImplementation.siralaKontrol'"}
+{"logLevel":"debug","message":"Found Secimin 'En yüksek fiyattan' oldugu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favoriListesi' and 'Base.StepImplementation.favoriListesi'"}
+{"logLevel":"debug","message":"Found Sag ustteki favorilerim butonuna tiklanmali in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.tumunuSec' and 'Base.StepImplementation.tumunuSec'"}
+{"logLevel":"debug","message":"Found Tümünü sec butonuna tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.gomlekSec' and 'Base.StepImplementation.gomlekSec'"}
+{"logLevel":"debug","message":"Found Acilan pencereden Gomlek secilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.ürünYokKontrol' and 'Base.StepImplementation.ürünYokKontrol'"}
+{"logLevel":"debug","message":"Found 'Favori Urununuz Yok' metni sayfada gözlenmelidir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.hoverErkek' and 'Base.StepImplementation.hoverErkek'"}
+{"logLevel":"debug","message":"Found Menuden Erkek seceneginin uzerinde durulur. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.urunKontrol' and 'Base.StepImplementation.urunKontrol'"}
+{"logLevel":"debug","message":"Found Favori olarak secilen 3 urunun orada oldugu kontrol edilmeli in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favoriEkle' and 'Base.StepImplementation.favoriEkle'"}
+{"logLevel":"debug","message":"Found Ilk 3 urun favorilere eklenir in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tTümünün secildigi kontrol et. : public void tumunuSecKontrol()"}
+{"logLevel":"debug","message":"\tAcilan pencereden Gomlek secilir : public void gomlekSec()"}
+{"logLevel":"debug","message":"\tFavori olarak secilen 3 urunun orada oldugu kontrol edilmeli : public void urunKontrol()"}
+{"logLevel":"debug","message":"\tSecilenleri sil butonuna tikla : public void secilenSil()"}
+{"logLevel":"debug","message":"\tIlk 3 urun favorilere eklenir : public void favoriEkle() throws InterruptedException"}
+{"logLevel":"debug","message":"\tMenuden Erkek seceneginin uzerinde durulur. : public void hoverErkek() throws InterruptedException"}
+{"logLevel":"debug","message":"\t'Favori Urununuz Yok' metni sayfada gözlenmelidir : public void ürünYokKontrol()"}
+{"logLevel":"debug","message":"\tAna sayfanin acildigi kontrol edilir. : public void anaSayfaKontrol()"}
+{"logLevel":"debug","message":"\tErkek Gömlek sayfası acildigi kontrol edilir. : public void gomlekSayfaKontrol()"}
+{"logLevel":"debug","message":"\tTümünü sec butonuna tikla : public void tumunuSec()"}
+{"logLevel":"debug","message":"\tSecimin 'En yüksek fiyattan' oldugu kontrol edilir. : public void siralaKontrol()"}
+{"logLevel":"debug","message":"\tSag ustteki favorilerim butonuna tiklanmali : public void favoriListesi()"}
+{"logLevel":"debug","message":"\tSırala Menusunden 'En yüksek fiyattan' secenegi secilir. : public void siralaSec()"}
+{"logLevel":"debug","message":"\tFavorilerim sayfasinin acildigi kontrol edilir. : public void favorilerimSayfaKontrol()"}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 29680
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1627120154.921][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Tem 24, 2021 12:49:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Ana sayfanin acildigi kontrol edilir.' using 'class Base.StepImplementation.anaSayfaKontrol"}
+{"logLevel":"debug","message":"Executing 'Menuden Erkek seceneginin uzerinde durulur.' using 'class Base.StepImplementation.hoverErkek"}
+{"logLevel":"debug","message":"Executing 'Acilan pencereden Gomlek secilir' using 'class Base.StepImplementation.gomlekSec"}
+{"logLevel":"debug","message":"Executing 'Erkek Gömlek sayfası acildigi kontrol edilir.' using 'class Base.StepImplementation.gomlekSayfaKontrol"}
+{"logLevel":"debug","message":"Executing 'Sırala Menusunden 'En yüksek fiyattan' secenegi secilir.' using 'class Base.StepImplementation.siralaSec"}
+{"logLevel":"debug","message":"Executing 'Ilk 3 urun favorilere eklenir' using 'class Base.StepImplementation.favoriEkle"}
+{"logLevel":"debug","message":"Executing 'Sag ustteki favorilerim butonuna tiklanmali' using 'class Base.StepImplementation.favoriListesi"}
+{"logLevel":"debug","message":"Executing 'Favorilerim sayfasinin acildigi kontrol edilir.' using 'class Base.StepImplementation.favorilerimSayfaKontrol"}
+{"logLevel":"debug","message":"Executing 'Tümünü sec butonuna tikla' using 'class Base.StepImplementation.tumunuSec"}
+{"logLevel":"debug","message":"Executing 'Secilenleri sil butonuna tikla' using 'class Base.StepImplementation.secilenSil"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

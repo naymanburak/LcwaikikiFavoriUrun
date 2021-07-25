@@ -1,0 +1,389 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+[DEBUG] 2021-07-25 20:38:42.258 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2021-07-25 20:38:42.262 [main] PlatformDependent - Platform: Windows
+[DEBUG] 2021-07-25 20:38:42.265 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2021-07-25 20:38:42.265 [main] PlatformDependent0 - Java version: 8
+[DEBUG] 2021-07-25 20:38:42.266 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2021-07-25 20:38:42.267 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2021-07-25 20:38:42.268 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2021-07-25 20:38:42.269 [main] PlatformDependent0 - direct buffer constructor: available
+[DEBUG] 2021-07-25 20:38:42.270 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2021-07-25 20:38:42.270 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2021-07-25 20:38:42.270 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2021-07-25 20:38:42.270 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2021-07-25 20:38:42.272 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\TESTIN~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2021-07-25 20:38:42.273 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2021-07-25 20:38:42.274 [main] PlatformDependent - -Dio.netty.maxDirectMemory: 1840250880 bytes
+[DEBUG] 2021-07-25 20:38:42.274 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2021-07-25 20:38:42.276 [main] CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2021-07-25 20:38:42.276 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2021-07-25 20:38:42.722 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+[DEBUG] 2021-07-25 20:38:42.740 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2021-07-25 20:38:42.740 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2021-07-25 20:38:42.747 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2021-07-25 20:38:42.748 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2021-07-25 20:38:42.755 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+{"logLevel":"debug","message":"gauge-java took 1402milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 1402"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+[DEBUG] 2021-07-25 20:38:42.790 [main] ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: sımple
+[DEBUG] 2021-07-25 20:38:42.790 [main] ResourceLeakDetector - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2021-07-25 20:38:42.791 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2021-07-25 20:38:42.823 [grpc-nio-boss-ELG-1-1] DefaultChannelId - -Dio.netty.processId: 9040 (auto-detected)
+[DEBUG] 2021-07-25 20:38:42.827 [grpc-nio-boss-ELG-1-1] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2021-07-25 20:38:42.827 [grpc-nio-boss-ELG-1-1] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2021-07-25 20:38:43.047 [grpc-nio-boss-ELG-1-1] NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2021-07-25 20:38:43.047 [grpc-nio-boss-ELG-1-1] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2021-07-25 20:38:43.249 [grpc-nio-boss-ELG-1-1] DefaultChannelId - -Dio.netty.machineId: 40:1c:83:ff:fe:49:e5:3a (auto-detected)
+[DEBUG] 2021-07-25 20:38:43.273 [grpc-nio-boss-ELG-1-1] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2021-07-25 20:38:43.273 [grpc-nio-boss-ELG-1-1] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2021-07-25 20:38:43.273 [grpc-nio-boss-ELG-1-1] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+{"logLevel":"debug","message":"started gRPC server on port 55113"}
+{"logLevel":"info","message":"Listening on port:55113"}
+[DEBUG] 2021-07-25 20:38:43.328 [grpc-nio-worker-ELG-3-1] AbstractByteBuf - -Dio.grpc.netty.shaded.io.netty.buffer.checkAccessible: true
+[DEBUG] 2021-07-25 20:38:43.328 [grpc-nio-worker-ELG-3-1] AbstractByteBuf - -Dio.grpc.netty.shaded.io.netty.buffer.checkBounds: true
+[DEBUG] 2021-07-25 20:38:43.329 [grpc-nio-worker-ELG-3-1] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@405d178b
+[DEBUG] 2021-07-25 20:38:43.392 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND SETTINGS: ack=false settings={=2147483647, =1048576, =8192}
+[DEBUG] 2021-07-25 20:38:43.396 [grpc-nio-worker-ELG-3-1] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2021-07-25 20:38:43.396 [grpc-nio-worker-ELG-3-1] Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2021-07-25 20:38:43.396 [grpc-nio-worker-ELG-3-1] Recycler - -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2021-07-25 20:38:43.396 [grpc-nio-worker-ELG-3-1] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2021-07-25 20:38:43.396 [grpc-nio-worker-ELG-3-1] Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+[DEBUG] 2021-07-25 20:38:43.403 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+[DEBUG] 2021-07-25 20:38:43.412 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND SETTINGS: ack=false settings={}
+[DEBUG] 2021-07-25 20:38:43.413 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND SETTINGS: ack=true
+[DEBUG] 2021-07-25 20:38:43.414 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND SETTINGS: ack=true
+[DEBUG] 2021-07-25 20:38:43.423 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=1 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:43.445 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=1 padding=0 endStream=true length=124 bytes=00000000770a25416e612073617966616e696e206163696c64696769206b6f6e74726f6c206564696c69722e1a4e0a25416e612073617966616e696e20616369...
+[DEBUG] 2021-07-25 20:38:43.446 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:43.463 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.gomlekSayfaKontrol' and 'Base.StepImplementation.gomlekSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Erkek Gömlek sayfası acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.tumunuSecKontrol' and 'Base.StepImplementation.tumunuSecKontrol'"}
+{"logLevel":"debug","message":"Found Tümünün secildigi kontrol et. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.secilenSil' and 'Base.StepImplementation.secilenSil'"}
+{"logLevel":"debug","message":"Found Secilenleri sil butonuna tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.anaSayfaKontrol' and 'Base.StepImplementation.anaSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Ana sayfanin acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.siralaSec' and 'Base.StepImplementation.siralaSec'"}
+{"logLevel":"debug","message":"Found Sırala Menusunden 'En yüksek fiyattan' secenegi secilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favorilerimSayfaKontrol' and 'Base.StepImplementation.favorilerimSayfaKontrol'"}
+{"logLevel":"debug","message":"Found Favorilerim sayfasinin acildigi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.siralaKontrol' and 'Base.StepImplementation.siralaKontrol'"}
+{"logLevel":"debug","message":"Found Secimin 'En yüksek fiyattan' oldugu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favoriListesi' and 'Base.StepImplementation.favoriListesi'"}
+{"logLevel":"debug","message":"Found Sag ustteki favorilerim butonuna tiklanmali in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.tumunuSec' and 'Base.StepImplementation.tumunuSec'"}
+{"logLevel":"debug","message":"Found Tümünü sec butonuna tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.gomlekSec' and 'Base.StepImplementation.gomlekSec'"}
+{"logLevel":"debug","message":"Found Acilan pencereden Gomlek secilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.ürünYokKontrol' and 'Base.StepImplementation.ürünYokKontrol'"}
+{"logLevel":"debug","message":"Found 'Favori Urununuz Yok' metni sayfada gözlenmelidir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.hoverErkek' and 'Base.StepImplementation.hoverErkek'"}
+{"logLevel":"debug","message":"Found Menuden Erkek seceneginin uzerinde durulur. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.urunKontrol' and 'Base.StepImplementation.urunKontrol'"}
+{"logLevel":"debug","message":"Found Favori olarak secilen 3 urunun orada oldugu kontrol edilmeli in current project scope."}
+{"logLevel":"debug","message":"Comparing 'Base.StepImplementation.favoriEkle' and 'Base.StepImplementation.favoriEkle'"}
+{"logLevel":"debug","message":"Found Ilk 3 urun favorilere eklenir in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tTümünün secildigi kontrol et. : public void tumunuSecKontrol()"}
+{"logLevel":"debug","message":"\tAcilan pencereden Gomlek secilir : public void gomlekSec()"}
+{"logLevel":"debug","message":"\tFavori olarak secilen 3 urunun orada oldugu kontrol edilmeli : public void urunKontrol()"}
+{"logLevel":"debug","message":"\tSecilenleri sil butonuna tikla : public void secilenSil() throws InterruptedException"}
+{"logLevel":"debug","message":"\tIlk 3 urun favorilere eklenir : public void favoriEkle() throws InterruptedException"}
+{"logLevel":"debug","message":"\tMenuden Erkek seceneginin uzerinde durulur. : public void hoverErkek() throws InterruptedException"}
+{"logLevel":"debug","message":"\t'Favori Urununuz Yok' metni sayfada gözlenmelidir : public void ürünYokKontrol()"}
+{"logLevel":"debug","message":"\tAna sayfanin acildigi kontrol edilir. : public void anaSayfaKontrol()"}
+{"logLevel":"debug","message":"\tErkek Gömlek sayfası acildigi kontrol edilir. : public void gomlekSayfaKontrol()"}
+{"logLevel":"debug","message":"\tTümünü sec butonuna tikla : public void tumunuSec()"}
+{"logLevel":"debug","message":"\tSecimin 'En yüksek fiyattan' oldugu kontrol edilir. : public void siralaKontrol()"}
+{"logLevel":"debug","message":"\tSag ustteki favorilerim butonuna tiklanmali : public void favoriListesi()"}
+{"logLevel":"debug","message":"\tSırala Menusunden 'En yüksek fiyattan' secenegi secilir. : public void siralaSec()"}
+{"logLevel":"debug","message":"\tFavorilerim sayfasinin acildigi kontrol edilir. : public void favorilerimSayfaKontrol()"}
+[DEBUG] 2021-07-25 20:38:47.298 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=1 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.308 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=1 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.309 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=1 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.313 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.313 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.313 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.314 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=3 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.314 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=3 padding=0 endStream=true length=142 bytes=00000000890a2b4d656e7564656e2045726b656b20736563656e6567696e696e20757a6572696e646520647572756c75722e1a5a0a2b4d656e7564656e204572...
+[DEBUG] 2021-07-25 20:38:47.314 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.315 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.328 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.329 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.331 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.331 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.331 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.331 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.331 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=5 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.332 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=5 padding=0 endStream=true length=109 bytes=00000000680a204163696c616e2070656e6365726564656e20476f6d6c656b20736563696c69721a440a204163696c616e2070656e6365726564656e20476f6d...
+[DEBUG] 2021-07-25 20:38:47.332 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.333 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.333 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=5 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.333 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.333 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=7 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=7 padding=0 endStream=true length=154 bytes=00000000950a2f45726b656b2047c3b66d6c656b20736179666173c4b1206163696c64696769206b6f6e74726f6c206564696c69722e1a620a2f45726b656b20...
+[DEBUG] 2021-07-25 20:38:47.334 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.335 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.335 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=7 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.335 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.336 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.336 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.336 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.336 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.336 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=9 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.337 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=9 padding=0 endStream=true length=187 bytes=00000000b60a3a53c4b172616c61204d656e7573756e64656e2027456e2079c3bc6b73656b20666979617474616e2720736563656e65676920736563696c6972...
+[DEBUG] 2021-07-25 20:38:47.337 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.338 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.339 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=9 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.339 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.339 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.339 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.339 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.340 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.340 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=11 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.340 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=11 padding=0 endStream=true length=169 bytes=00000000a40a34536563696d696e2027456e2079c3bc6b73656b20666979617474616e27206f6c64756775206b6f6e74726f6c206564696c69722e1a6c0a3453...
+[DEBUG] 2021-07-25 20:38:47.340 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.341 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=11 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.341 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=11 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.341 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=11 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=13 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=13 padding=0 endStream=true length=100 bytes=000000005f0a1d496c6b2033207572756e206661766f72696c65726520656b6c656e69721a3e0a1d496c6b2033207572756e206661766f72696c65726520656b...
+[DEBUG] 2021-07-25 20:38:47.342 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.343 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=13 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.343 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=13 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.343 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=13 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.344 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.344 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.345 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.345 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.345 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=15 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.345 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=15 padding=0 endStream=true length=142 bytes=00000000890a2b5361672075737474656b69206661766f72696c6572696d206275746f6e756e612074696b6c616e6d616c691a5a0a2b5361672075737474656b...
+[DEBUG] 2021-07-25 20:38:47.345 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.346 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=15 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.346 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=15 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.346 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=15 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.346 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.346 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.347 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.347 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.347 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=17 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.347 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=17 padding=0 endStream=true length=154 bytes=00000000950a2f4661766f72696c6572696d20736179666173696e696e206163696c64696769206b6f6e74726f6c206564696c69722e1a620a2f4661766f7269...
+[DEBUG] 2021-07-25 20:38:47.347 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.348 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=17 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.348 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=17 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.348 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=17 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.348 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.348 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=19 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=19 padding=0 endStream=true length=193 bytes=00000000bc0a3c4661766f7269206f6c6172616b20736563696c656e2033207572756e756e206f72616461206f6c64756775206b6f6e74726f6c206564696c6d...
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.349 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=19 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.350 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=19 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.350 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=19 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=21 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=21 padding=0 endStream=true length=97 bytes=000000005c0a1c54c3bc6dc3bc6ec3bc20736563206275746f6e756e612074696b6c611a3c0a1c54c3bc6dc3bc6ec3bc20736563206275746f6e756e61207469...
+[DEBUG] 2021-07-25 20:38:47.351 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.352 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=21 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.352 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=21 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.352 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=21 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=23 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=23 padding=0 endStream=true length=109 bytes=00000000680a2054c3bc6dc3bc6ec3bc6e20736563696c64696769206b6f6e74726f6c2065742e1a440a2054c3bc6dc3bc6ec3bc6e20736563696c6469676920...
+[DEBUG] 2021-07-25 20:38:47.353 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.354 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=23 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.354 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=23 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.354 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=23 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=25 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ValidateStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=25 padding=0 endStream=true length=103 bytes=00000000620a1e536563696c656e6c6572692073696c206275746f6e756e612074696b6c611a400a1e536563696c656e6c6572692073696c206275746f6e756e...
+[DEBUG] 2021-07-25 20:38:47.355 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=25 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=25 padding=0 endStream=false length=7 bytes=00000000020801
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=25 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.356 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.382 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=27 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeSuiteDataStore, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.382 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=27 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:38:47.382 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.383 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.388 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=27 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.389 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=27 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:38:47.389 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=27 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.389 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.389 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.389 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.391 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=29 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.391 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=29 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:38:47.391 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.392 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.400 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=29 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.400 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=29 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:38:47.400 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=29 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.401 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.401 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.401 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.402 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=31 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeSpecDataStore, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.403 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=31 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:38:47.403 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.404 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.406 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=31 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.406 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=31 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:38:47.406 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=31 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.407 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.407 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.407 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.407 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=33 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartSpecExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.408 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=33 padding=0 endStream=true length=238 bytes=00000000e90ae6010a81010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:38:47.408 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.410 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.410 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=33 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.410 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=33 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:38:47.411 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=33 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.411 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.411 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.411 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.412 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=35 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/InitializeScenarioDataStore, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.412 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=35 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:38:47.412 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.413 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:38:47.414 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=35 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.414 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=35 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:38:47.414 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=35 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:38:47.415 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:38:47.415 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.415 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:38:47.415 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=37 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartScenarioExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:38:47.416 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=37 padding=0 endStream=true length=269 bytes=00000001080a85020a81010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:38:47.416 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:38:47.417 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+***********************************************
+****************Test Basliyor******************
+***********************************************
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 26668
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1627234729.248][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Tem 25, 2021 8:38:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[DEBUG] 2021-07-25 20:39:11.177 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=37 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:39:11.178 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=37 padding=0 endStream=false length=11 bytes=00000000060a0430cdb901
+[DEBUG] 2021-07-25 20:39:11.178 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=37 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:39:11.179 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=11
+[DEBUG] 2021-07-25 20:39:11.179 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:39:11.179 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:39:11.182 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=39 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/StartStepExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:39:11.182 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=39 padding=0 endStream=true length=351 bytes=000000015a0ad7020a81010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:39:11.182 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:39:11.185 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:39:11.185 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=39 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:39:11.185 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=39 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:39:11.186 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=39 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:39:11.187 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:39:11.187 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:39:11.188 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:39:11.191 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=41 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/ExecuteStep, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:39:11.192 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=41 padding=0 endStream=true length=83 bytes=000000004e0a25416e612073617966616e696e206163696c64696769206b6f6e74726f6c206564696c69722e1225416e612073617966616e696e206163696c64...
+[DEBUG] 2021-07-25 20:39:11.192 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Executing 'Ana sayfanin acildigi kontrol edilir.' using 'class Base.StepImplementation.anaSayfaKontrol"}
+[DEBUG] 2021-07-25 20:39:11.193 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[INFO ] 2021-07-25 20:39:11.215 [pool-2-thread-1] BasePage - Ana sayfanin acildigi kontrol ediliyor...
+[DEBUG] 2021-07-25 20:40:12.482 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=41 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:12.483 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=41 padding=0 endStream=false length=553 bytes=00000002240aa10408011adc016f72672e6f70656e71612e73656c656e69756d2e54696d656f7574457863657074696f6e3a20457870656374656420636f6e64...
+[DEBUG] 2021-07-25 20:40:12.483 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=41 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=553
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=43 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishStepExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=43 padding=0 endStream=true length=844 bytes=00000003470ac4060a83010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:40:12.484 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:40:12.486 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:40:12.487 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=43 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:12.487 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=43 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:40:12.487 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=43 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:12.488 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:40:12.488 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:12.488 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:12.488 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=45 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishScenarioExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:12.488 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=45 padding=0 endStream=true length=275 bytes=000000010e0a8b020a83010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:40:12.489 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:40:12.489 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:40:13.052 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=45 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.052 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=45 padding=0 endStream=false length=10 bytes=00000000050a0330b204
+[DEBUG] 2021-07-25 20:40:13.052 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=45 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:13.053 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=10
+[DEBUG] 2021-07-25 20:40:13.053 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.053 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.054 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=47 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishSpecExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.054 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=47 padding=0 endStream=true length=242 bytes=00000000ed0aea010a83010a1553706563696669636174696f6e2048656164696e671268433a5c55736572735c74657374696e69756d5c4465736b746f705c54...
+[DEBUG] 2021-07-25 20:40:13.054 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:40:13.057 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=47 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.058 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=47 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:40:13.059 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=47 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:13.059 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=49 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/FinishExecution, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=49 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:40:13.060 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+[DEBUG] 2021-07-25 20:40:13.062 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:40:13.062 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=49 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.062 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=49 padding=0 endStream=false length=7 bytes=00000000020a00
+[DEBUG] 2021-07-25 20:40:13.062 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=49 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:13.063 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=7
+[DEBUG] 2021-07-25 20:40:13.063 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.063 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.135 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND HEADERS: streamId=51 headers=GrpcHttp2RequestHeaders[:path: /gauge.messages.Runner/Kill, :authority: 127.0.0.1:55113, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-go/1.24.0] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.136 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND DATA: streamId=51 padding=0 endStream=true length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:40:13.136 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=false bytes=1234
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+[DEBUG] 2021-07-25 20:40:13.149 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=51 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=0 endStream=false
+[DEBUG] 2021-07-25 20:40:13.150 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND DATA: streamId=51 padding=0 endStream=false length=5 bytes=0000000000
+[DEBUG] 2021-07-25 20:40:13.151 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND HEADERS: streamId=51 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] padding=0 endStream=true
+[DEBUG] 2021-07-25 20:40:13.151 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=true bytes=1234
+[DEBUG] 2021-07-25 20:40:13.151 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=5
+[DEBUG] 2021-07-25 20:40:13.151 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] INBOUND PING: ack=false bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.152 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND PING: ack=true bytes=145258749040133895
+[DEBUG] 2021-07-25 20:40:13.153 [grpc-nio-worker-ELG-3-1] NettyServerHandler - [id: 0x591eb18e, L:/127.0.0.1:55113 - R:/127.0.0.1:55114] OUTBOUND GO_AWAY: lastStreamId=51 errorCode=0 length=0 bytes=
+{"logLevel":"debug","message":"Runner killed gracefully."}
