@@ -22,13 +22,12 @@ public class BasePage extends BaseTest {
 
 
     public void listElements(String xpath) throws InterruptedException { //Elemenetler Listeleniyor
-        List<WebElement> li = driver.findElements(By.xpath(xpath));
-        li.get(0).click();
-        Thread.sleep(500);
-        li.get(1).click();
-        Thread.sleep(500);
-        li.get(2).click();
-        return;
+        List<WebElement> list = driver.findElements(By.xpath(xpath));
+        list.get(0).click();
+        waitForSecond(1);
+        list.get(1).click();
+        waitForSecond(1);
+        list.get(2).click();
     }
 
     public void assertionUrl(String link) {
